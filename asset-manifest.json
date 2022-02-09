@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Peter-kodeHode/react_team_project/static/css/main.073c9b0a.css",
+    "main.js": "/Peter-kodeHode/react_team_project/static/js/main.ddab4782.js",
+    "static/js/787.71613743.chunk.js": "/Peter-kodeHode/react_team_project/static/js/787.71613743.chunk.js",
+    "index.html": "/Peter-kodeHode/react_team_project/index.html",
+    "main.073c9b0a.css.map": "/Peter-kodeHode/react_team_project/static/css/main.073c9b0a.css.map",
+    "main.ddab4782.js.map": "/Peter-kodeHode/react_team_project/static/js/main.ddab4782.js.map",
+    "787.71613743.chunk.js.map": "/Peter-kodeHode/react_team_project/static/js/787.71613743.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.ddab4782.js"
+  ]
+}
