@@ -1,13 +1,15 @@
-.App {
-    text-align: center;
-  }
+
 
   .navbar {
     background-color: #FFF5F5;
     width: 100vw;
-    
+    display:flex;
+    flex-direction:column;
   }
 
   .navbar ul {
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
   }
