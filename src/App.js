@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <EpicHeader/>
-      <GoogleMaps/>
+      {/* <EpicHeader/>
+      <GoogleMaps/> */}
     </div>
   );
 }
