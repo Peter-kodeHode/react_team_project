@@ -1,13 +1,16 @@
 import React from "react";
+import checkButton from "./CheckButton"
 
 const bell = process.env.PUBLIC_URL + "/images/Bell.png";
 const hamburger = process.env.PUBLIC_URL + "/images/hamburger.png";
 const navArrow = process.env.PUBLIC_URL + "/images/navArrow.png";
 
+
+
 function Navbar() {
   return (
     <>
-      <nav className="navbar">
+      <div className="navbar">
         <ul>
           <li>
             <img className="navArrow" src={navArrow} alt="navArrow" />
@@ -16,24 +19,14 @@ function Navbar() {
             <img className="bell" src={bell} alt="bell" />
           </li>
           <li>
-            <input className="toggleBurger" type="checkbox"/>
-              <label htmlFor="toggleBurger">
-                <img
-                className="hamburger"
-                src={hamburger}
-                alt="hamburgermenu"
-              />
-              </label>
+              <img className="hamburger" src={hamburger} alt="hamburgermenu" onClick={(checkButton)}/>
           </li>
         </ul>
-        <nav className="hamburgerMenu">
-          <a className="hamburgerLinks" href="www.google.com">
-            Shuwooop{" "}
-          </a>
-        </nav>
-      </nav>
+      </div>
     </>
+
   );
+  
 }
 
 export default Navbar;
