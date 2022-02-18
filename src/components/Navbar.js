@@ -1,6 +1,6 @@
 import React from "react";
-import checkButton from "./CheckButton"
 
+import checkButton from "./CheckButton"
 const bell = process.env.PUBLIC_URL + "/images/Bell.png";
 const hamburger = process.env.PUBLIC_URL + "/images/hamburger.png";
 const navArrow = process.env.PUBLIC_URL + "/images/navArrow.png";

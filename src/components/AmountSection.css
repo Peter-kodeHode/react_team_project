@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.amount-section {
+    width: 200px;
+    box-sizing: border-box;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 2fr; 
+    gap: 18px 0; 
+    grid-template-areas: 
+      ". guests"
+      ". days"
+      ". price"
+      ". search";
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.amount-section p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.amount-btn {
+    justify-self: right;
+    border: 1px solid #686767;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+    height: 23px;
+}
+
+.amount-btn button {
+    border-radius: 5px;
+    border: 1px solid white;
+    background: white;
+    width: 20px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.amount-btn button:hover {
+    background: lightgray;
+}
+
+.amount-btn input {
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    width: 30px;
+    height: 100%;
+    text-align: center;
+    border-left: 1px solid #686767;
+    appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.guests-btn {
+    grid-area: guests;
+}
+
+.days-btn {
+    grid-area: days;
+}
+
+.price-btn {
+    grid-area: price;
+}
+
+.search-red {
+    background-color: #FF8E8E;
+    color: white;
+    grid-area: search;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    height: 23px;
+    width: 72px;
+    align-self: flex-end;
+    justify-self: right;
+}
+
+.search-red:hover {
+    background-color: hsl(0, 90%, 68%);
+    cursor: pointer;
+}
