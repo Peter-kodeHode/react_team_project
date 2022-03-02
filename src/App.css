@@ -1,66 +1,113 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightblue;
+}
+
+.navbar {
+  position: relative;
+  background-color: rgba(255, 245, 245, 0.3);
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.menuNav {
+  overflow-y: scroll;
+  list-style: none;
+  background: rgba(0, 0, 0, 0.336);
+  height: 150vh;
+  width: 0;
+  overflow: hidden;
+  max-width: 100vw;
+  z-index: 9;
+  transition:200ms;
   
-  body {
-    background-color:lightblue;
-  }
+}
 
-  .navbar {
-    background-color: rgba(255, 245, 245, 0.3);
-    width: 100%;
-    height:40px;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    
-  }
+.menuNav.showMenu {
+  width: 100vw;
 
-  .navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
+}
 
-  .navbar li {
-    display:inline;
-  }
+.navLinks{
+  position: absolute;
+  top:50px;
+  right:25px;
+  visibility: hidden;
+}
 
-  .navbar img {
-    position:absolute;
-  }
+.navLinks a{
+  text-decoration: none;
+  color:white;
+}
 
+.showMenu .navLinks{
+  visibility: visible;
+  transition: 500ms;
+}
 
+.navLinks:hover{
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration:underline;
+  transition: 500ms;
+}
 
-  .navArrow{
-    left:35px;
-    width:15px;
-    height:10px;
-    top:15px;
-  }
+.navbar .navbarImages {
+  display: inline;
+}
 
-  .hamburger {
-    z-index: 1;
-    left:390px;
-    width:24px;
-    height:24px;
-    top: 7px;
-    
-  }
+.menuNav img {
+  position: absolute;
+}
 
- .hamburger:hover{
-   cursor:pointer;
-   filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 1));
- }
+.navArrow {
+  left: 35px;
+  width: 15px;
+  height: 10px;
+  top: 15px;
+}
 
-  .bell{
-    left:350px;
-    width:19px;
-    height:19px;
-    top: 9px;
-  }
+.hamburger {
+  z-index: 1;
+  left: 390px;
+  width: 24px;
+  height: 24px;
+  top: 7px;
+}
 
+.hamburger:hover {
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 1));
+ 
+}
 
+.hamburger:active{
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 1));
+  transform:scale(1.2)
+}
 
+.showMenu .hamburger:active{
+  filter: drop-shadow(0px 0px 4px rgb(255, 255, 255));
+  transform:scale(1.2)
+}
+
+.showMenu .hamburger:hover {
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 4px rgb(255, 255, 255));
+}
+
+.bell {
+  left: 350px;
+  width: 19px;
+  height: 19px;
+  top: 9px;
+}
