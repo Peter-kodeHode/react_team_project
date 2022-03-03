@@ -9,9 +9,10 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      {/* <EpicHeader/>
+      <EpicHeader/>
+      {/* <AmountSection/> */}
       <GoogleMaps/>
-      <AmountSection/> */}
+      
     </div>
   );
 }

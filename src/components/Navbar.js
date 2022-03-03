@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 
-
 import checkButton from "./CheckButton";
-const bell = process.env.PUBLIC_URL + "/images/Bell.png";
+// const bell = process.env.PUBLIC_URL + "/images/Bell.png";
 const hamburger = process.env.PUBLIC_URL + "/images/hamburger.png";
-const navArrow = process.env.PUBLIC_URL + "/images/navArrow.png";
+const navArrow = process.env.PUBLIC_URL + "/images/navarrow.png";
 
 function Navbar() {
   const [navBarOpen, setNavBarOpen] = useState(false);
@@ -13,19 +12,34 @@ function Navbar() {
     setNavBarOpen((prev) => !prev);
   };
 
+  const[navBarOpen2,setNavBarOpen2] = useState(false);
+
+  const handleToggle2 = () => {
+    setNavBarOpen2((prev) => !prev);
+  }
+
+  
+
   return (
     <>
       <div className="navbar">
         <ul className={`menuNav ${navBarOpen ? " showMenu" : ""}`}>
           <li className="navLinks">
-            <a href="/">lollol</a>
+            <a href="/">About</a>
           </li>
-          <li className="navbarImages">
-            <img className="navArrow" src={navArrow} alt="navArrow" />
+
+          {/* Funker ikke med li mest sannsynlig. Gotta fiks! */}
+          <li className={`menuNavLeft ${navBarOpen2 ? " showMenuLeft" : ""}`}>
+            <img
+              className="navArrow"
+              src={navArrow}
+              alt="navArrow"
+              onClick={handleToggle2}
+            />
           </li>
-          <li className="navbarImages">
+          {/* <li className="navbarImages">
             <img className="bell" src={bell} alt="bell" />
-          </li>
+          </li> */}
           <li className="navbarImages">
             <img
               className="hamburger"

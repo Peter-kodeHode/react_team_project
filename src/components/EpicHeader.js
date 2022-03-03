@@ -4,9 +4,11 @@ import React from "react";
 function EpicHeader(){
     return(
         <>
-        <h1>
-        Episke Destinasjoner
-        </h1>
+        <div className="headerImg">
+            <h1>
+                {/* Bergen */}
+            </h1>
+        </div>
         </>
     );
 }
