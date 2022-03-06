@@ -28,18 +28,23 @@ function Navbar() {
             <a href="/">About</a>
           </li>
 
-          {/* Funker ikke med li mest sannsynlig. Gotta fiks! */}
           <li className={`menuNavLeft ${navBarOpen2 ? " showMenuLeft" : ""}`}>
+
+          </li>
+
+          <li className="navbarImages">
             <img
               className="navArrow"
               src={navArrow}
               alt="navArrow"
               onClick={handleToggle2}
             />
-          </li>
+            </li>
+
           {/* <li className="navbarImages">
             <img className="bell" src={bell} alt="bell" />
-          </li> */}
+          </li> */}'
+          '
           <li className="navbarImages">
             <img
               className="hamburger"

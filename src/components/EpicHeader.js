@@ -6,7 +6,7 @@ function EpicHeader(){
         <>
         <div className="headerImg">
             <h1>
-                {/* Bergen */}
+                Bergen
             </h1>
         </div>
         </>
